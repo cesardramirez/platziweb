@@ -15,6 +15,25 @@ public class ServletLogin extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
-        out.println("<h3>Hello World!</h3>");
+
+        String user = req.getParameter("usuario");
+        String company = req.getParameter("empresa");
+
+        if (user != null && company != null) {
+            if (company.equals("Platzi")) {
+                out.println("Bienvenido a Platzi");
+            } else {
+                out.println("Bienvenido");
+            }
+        } else {
+            out.println("Usuario incorrecto!!");
+        }
+
+        out.close();
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req, resp);
     }
 }
