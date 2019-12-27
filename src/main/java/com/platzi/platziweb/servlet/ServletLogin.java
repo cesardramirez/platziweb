@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(description = "Servlet para manipular la petición de login.", urlPatterns = {"/ServletLogin"})
+@WebServlet(description = "Servlet para manipular la petición de login.", urlPatterns = {"/login"})
 public class ServletLogin extends HttpServlet {
 
     @Override

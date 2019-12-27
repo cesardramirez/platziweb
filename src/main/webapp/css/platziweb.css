@@ -1,0 +1,21 @@
+.table {
+    display: table;
+    margin-bottom: 10px;
+}
+
+.headboard {
+    display: table-row;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row {
+    display: table-row;
+    border-top: 5px;
+}
+
+.cell {
+    display: table-cell;
+    /*border: thin solid;*/
+    padding: 0 5px;
+}
