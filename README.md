@@ -1,2 +1,2 @@
 # platziweb
-Platzi - Curso de Hibernate y Java Spring - App Web
+Platzi - Curso de Hibernate y Java Spring - App Web (Servlets)
